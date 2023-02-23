@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:practive_riverpod/util/util.dart';
 
-import 'entries.dart';
+import 'entities.dart';
 
 part 'item_stock.freezed.dart';
 

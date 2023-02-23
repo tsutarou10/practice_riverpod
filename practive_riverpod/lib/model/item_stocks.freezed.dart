@@ -57,22 +57,22 @@ class _$ItemStocksCopyWithImpl<$Res, $Val extends ItemStocks>
 }
 
 /// @nodoc
-abstract class _$$_$ItemStocksCopyWith<$Res>
+abstract class _$$_ItemStocksCopyWith<$Res>
     implements $ItemStocksCopyWith<$Res> {
-  factory _$$_$ItemStocksCopyWith(
-          _$_$ItemStocks value, $Res Function(_$_$ItemStocks) then) =
-      __$$_$ItemStocksCopyWithImpl<$Res>;
+  factory _$$_ItemStocksCopyWith(
+          _$_ItemStocks value, $Res Function(_$_ItemStocks) then) =
+      __$$_ItemStocksCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<ItemStock> stocks});
 }
 
 /// @nodoc
-class __$$_$ItemStocksCopyWithImpl<$Res>
-    extends _$ItemStocksCopyWithImpl<$Res, _$_$ItemStocks>
-    implements _$$_$ItemStocksCopyWith<$Res> {
-  __$$_$ItemStocksCopyWithImpl(
-      _$_$ItemStocks _value, $Res Function(_$_$ItemStocks) _then)
+class __$$_ItemStocksCopyWithImpl<$Res>
+    extends _$ItemStocksCopyWithImpl<$Res, _$_ItemStocks>
+    implements _$$_ItemStocksCopyWith<$Res> {
+  __$$_ItemStocksCopyWithImpl(
+      _$_ItemStocks _value, $Res Function(_$_ItemStocks) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -80,7 +80,7 @@ class __$$_$ItemStocksCopyWithImpl<$Res>
   $Res call({
     Object? stocks = null,
   }) {
-    return _then(_$_$ItemStocks(
+    return _then(_$_ItemStocks(
       stocks: null == stocks
           ? _value._stocks
           : stocks // ignore: cast_nullable_to_non_nullable
@@ -91,8 +91,8 @@ class __$$_$ItemStocksCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_$ItemStocks extends _$ItemStocks {
-  _$_$ItemStocks({required final List<ItemStock> stocks})
+class _$_ItemStocks extends _ItemStocks {
+  _$_ItemStocks({required final List<ItemStock> stocks})
       : _stocks = stocks,
         super._();
 
@@ -113,7 +113,7 @@ class _$_$ItemStocks extends _$ItemStocks {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_$ItemStocks &&
+            other is _$_ItemStocks &&
             const DeepCollectionEquality().equals(other._stocks, _stocks));
   }
 
@@ -124,19 +124,18 @@ class _$_$ItemStocks extends _$ItemStocks {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_$ItemStocksCopyWith<_$_$ItemStocks> get copyWith =>
-      __$$_$ItemStocksCopyWithImpl<_$_$ItemStocks>(this, _$identity);
+  _$$_ItemStocksCopyWith<_$_ItemStocks> get copyWith =>
+      __$$_ItemStocksCopyWithImpl<_$_ItemStocks>(this, _$identity);
 }
 
-abstract class _$ItemStocks extends ItemStocks {
-  factory _$ItemStocks({required final List<ItemStock> stocks}) =
-      _$_$ItemStocks;
-  _$ItemStocks._() : super._();
+abstract class _ItemStocks extends ItemStocks {
+  factory _ItemStocks({required final List<ItemStock> stocks}) = _$_ItemStocks;
+  _ItemStocks._() : super._();
 
   @override
   List<ItemStock> get stocks;
   @override
   @JsonKey(ignore: true)
-  _$$_$ItemStocksCopyWith<_$_$ItemStocks> get copyWith =>
+  _$$_ItemStocksCopyWith<_$_ItemStocks> get copyWith =>
       throw _privateConstructorUsedError;
 }

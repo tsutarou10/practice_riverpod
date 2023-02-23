@@ -26,7 +26,7 @@ class CartPrice with _$CartPrice {
   factory CartPrice(int price) = _CartPrice;
   CartPrice._();
 
-  late final label = '合計金額 ${Item.formatPRice(price)}';
+  late final label = '合計金額 ${Item.formatPrice(price)}';
 }
 
 

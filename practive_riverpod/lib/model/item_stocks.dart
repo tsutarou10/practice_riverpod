@@ -24,7 +24,7 @@ Future<ItemStocks> itemStocks(ItemStocksRef ref) async {
 
 @freezed
 class ItemStocks with _$ItemStocks {
-  factory ItemStocks({required List<ItemStock> stocks}) = _$ItemStocks;
+  factory ItemStocks({required List<ItemStock> stocks}) = _ItemStocks;
   ItemStocks._();
 
   late final map = Map.fromEntries(
@@ -36,5 +36,5 @@ class ItemStocks with _$ItemStocks {
   late final itemMap = map.map((key, value) => MapEntry(key, value.item));
   late final itemIds = stocks.map((stock) => stock.item.id).toList();
   ItemStock? itemStock(String id) => map[id];
-  Item? item(string id) => itemStock(id)?.item;
+  Item? item(String id) => itemStock(id)?.item;
 }

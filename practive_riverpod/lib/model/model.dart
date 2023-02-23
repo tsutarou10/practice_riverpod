@@ -1,4 +1,4 @@
 export 'cart_notifier.dart';
-export 'entries/entries.dart';
+export 'entities/entities.dart';
 export 'item_quantity.dart';
-export 'item_stokcs.dart';
+export 'item_stocks.dart';
