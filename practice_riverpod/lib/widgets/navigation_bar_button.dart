@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
-class NavigatorBarButton extends StatelessWidget {
-  NavigatorBarButton({
+class NavigationBarButton extends StatelessWidget {
+  NavigationBarButton({
     super.key,
     @required this.onPressed,
     required String text,
